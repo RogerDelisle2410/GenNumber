@@ -1,0 +1,27 @@
+﻿
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: cyan;
+}
+
+h3 {
+    text-align: center;
+}
+
+.myClass {
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
+    resize: none;
+    margin: auto;
+    border-style: solid;
+    border-color: blue;
+}
+
+div,
+span {
+    word-wrap: break-word;
+}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Roger Delisle-->
+<head>
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <h3>An ugly list of unique, random numbers</h3>
+    <input type='button' id='btn' value='Generate Number' onclick='gen_number_at_random()' />
+    <div id="result" class="myClass" readonly="true">
+    </div>
+
+    <script language="javascript">
+        var maxNo = 10000;
+        let gen_number_at_random = () => {
+
+            var NumArray = [];
+            while (NumArray.length < maxNo) {
+                var num = Math.floor(Math.random() * maxNo) + 1;
+                if (NumArray.indexOf(num) === -1) NumArray.push(num);
+            }
+            let p = document.getElementById('result');
+            p.innerHTML = NumArray;
+        }
+    </script>
+</body>
+</html>
